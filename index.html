@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz & Arte - Designs Gospel Editáveis</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --royal-blue: #1e40af;
+            --gold: #f59e0b;
+            --purple: #7c3aed;
+            --white: #ffffff;
+            --light-gray: #f8fafc;
+            --dark-gray: #1f2937;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 60px 0 50px;
+            background: linear-gradient(135deg, #0f172a 0%, var(--royal-blue) 30%, var(--purple) 70%, #581c87 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="0.8" fill="white" opacity="0.08"/><circle cx="75" cy="75" r="0.8" fill="white" opacity="0.08"/><circle cx="50" cy="10" r="0.4" fill="white" opacity="0.06"/><circle cx="10" cy="60" r="0.4" fill="white" opacity="0.06"/><circle cx="90" cy="40" r="0.4" fill="white" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .main-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, var(--white), var(--gold), #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.01em;
+            font-style: italic;
+        }
+
+        .slogan {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #f8fafc 0%, var(--white) 50%, #f8fafc 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--royal-blue);
+            margin-bottom: 20px;
+            position: relative;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), #f97316);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 60px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.2px;
+        }
+
+        .gallery-container {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow:
+                0 25px 50px -12px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        .gallery-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple), var(--gold));
+            border-radius: 24px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+            -webkit-mask-composite: xor;
+            opacity: 0.3;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .art-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.08),
+                0 4px 10px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .art-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .art-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.15),
+                0 10px 20px rgba(30, 64, 175, 0.1);
+            border-color: rgba(30, 64, 175, 0.2);
+        }
+
+        .art-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .art-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .art-card:hover .art-image {
+            transform: scale(1.08);
+            filter: brightness(1.05) saturate(1.1);
+        }
+
+        .art-info {
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+            background: var(--white);
+        }
+
+        .art-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            margin-bottom: 18px;
+            line-height: 1.4;
+            min-height: 2.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.2px;
+        }
+
+        .edit-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .edit-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .edit-button::after {
+            content: '→';
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .edit-button:hover::before {
+            left: 100%;
+        }
+
+        .edit-button:hover::after {
+            transform: translateX(3px);
+        }
+
+        .edit-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(30, 64, 175, 0.35);
+            background: linear-gradient(135deg, #1d4ed8, #8b5cf6);
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .load-more-btn {
+            background: linear-gradient(135deg, var(--gold), #f97316);
+            color: var(--white);
+            border: none;
+            padding: 18px 45px;
+            border-radius: 35px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow:
+                0 8px 25px rgba(245, 158, 11, 0.25),
+                0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.8px;
+        }
+
+        .load-more-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .load-more-btn:hover::before {
+            left: 100%;
+        }
+
+        .load-more-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow:
+                0 15px 35px rgba(245, 158, 11, 0.35),
+                0 8px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #f59e0b, #ea580c);
+        }
+
+        .load-more-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .load-more-btn:disabled:hover {
+            transform: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--light-gray);
+            border-top: 4px solid var(--royal-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+
+            .main-title {
+                font-size: 4rem;
+            }
+
+            .gallery-container {
+                padding: 35px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 18px;
+            }
+
+            .main-title {
+                font-size: 3.2rem;
+            }
+
+            .slogan {
+                font-size: 1.3rem;
+            }
+
+            .header {
+                padding: 50px 0 40px;
+            }
+
+            .gallery-section {
+                padding: 80px 0;
+            }
+
+            .gallery-container {
+                padding: 30px 25px;
+            }
+
+            .art-image {
+                height: 200px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .main-title {
+                font-size: 2.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .gallery-container {
+                padding: 25px 20px;
+                border-radius: 20px;
+            }
+
+            .art-info {
+                padding: 20px 15px;
+            }
+
+            .art-image {
+                height: 240px;
+            }
+
+            .edit-button {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/logo.png" alt="Luz & Arte" class="main-logo">
+                <p class="slogan">Designs inspiradores para sua igreja, com excelência em cada detalhe</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galeria de Artes Gospel</h2>
+            <p class="section-subtitle">Designs profissionais e editáveis para transformar a comunicação da sua igreja
+            </p>
+
+            <div class="gallery-container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Arts will be loaded here dynamically -->
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Carregando mais artes...</p>
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreArts()">
+                        Carregar Mais Artes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <script>
+        // Sample data structure - you can replace this with your actual data
+        let allArts = [
+            {
+                image: "images/1.png", // Caminho relativo para sua imagem
+                title: "Arte Gospel - Louvor e Adoração",
+                editLink: "https://canva.com/edit-link-1"
+            },
+            {
+                image: "images/2.png",
+                title: "Design Inspiracional - Fé",
+                editLink: "https://canva.com/edit-link-2"
+            },
+            {
+                image: "images/3.png",
+                title: "Arte para Culto Dominical",
+                editLink: "https://canva.com/edit-link-3"
+            },
+            {
+                image: "images/4.png",
+                title: "Template Versículo Bíblico",
+                editLink: "https://canva.com/edit-link-4"
+            },
+            {
+                image: "images/5.png",
+                title: "Design para Eventos Gospel",
+                editLink: "https://canva.com/edit-link-5"
+            },
+            {
+                image: "images/6.png",
+                title: "Arte Motivacional Cristã",
+                editLink: "https://canva.com/edit-link-6"
+            },
+            {
+                image: "images/7.png",
+                title: "Template para Pregação",
+                editLink: "https://canva.com/edit-link-7"
+            },
+            {
+                image: "images/8.png",
+                title: "Design para Redes Sociais",
+                editLink: "https://canva.com/edit-link-8"
+            },
+            {
+                image: "images/9.png",
+                title: "Arte para Ministério Jovem",
+                editLink: "https://canva.com/edit-link-9"
+            },
+            {
+                image: "images/10.png",
+                title: "Template Convite Gospel",
+                editLink: "https://canva.com/edit-link-10"
+            },
+            {
+                image: "images/11.png",
+                title: "Design para Conferência",
+                editLink: "https://canva.com/edit-link-11"
+            },
+            {
+                image: "images/12.png",
+                title: "Arte Devocional Diário",
+                editLink: "https://canva.com/edit-link-12"
+            }
+        ];
+
+        let currentIndex = 0;
+        const artsPerLoad = 9;
+
+        // Function to add arts to the data array
+        function addArt(imageUrl, title, editLink) {
+            allArts.push({
+                image: imageUrl,
+                title: title,
+                editLink: editLink
+            });
+        }
+
+        // Function to create art card HTML
+        function createArtCard(art) {
+            return `
+                <div class="art-card">
+                    <img src="${art.image}" alt="${art.title}" class="art-image" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xMDAgNzBMMTMwIDEzMEg3MEwxMDAgNzBaIiBmaWxsPSIjOUI5QkEwIi8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjgwIiByPSI4IiBmaWxsPSIjOUI5QkEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkltYWdlbSBuw6NvIGVuY29udHJhZGE8L3RleHQ+Cjwvc3ZnPg=='; this.alt='Imagem não encontrada';">
+                    <div class="art-info">
+                        <h3 class="art-title">${art.title}</h3>
+                        <a href="${art.editLink}" target="_blank" class="edit-button">
+                            Editar no Canva
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to load more arts
+        function loadMoreArts() {
+            const loading = document.getElementById('loading');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const galleryGrid = document.getElementById('galleryGrid');
+
+            // Show loading animation
+            loading.classList.add('active');
+            loadMoreBtn.disabled = true;
+
+            // Simulate loading delay
+            setTimeout(() => {
+                const endIndex = Math.min(currentIndex + artsPerLoad, allArts.length);
+
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const artCard = document.createElement('div');
+                    artCard.innerHTML = createArtCard(allArts[i]);
+                    galleryGrid.appendChild(artCard.firstElementChild);
+                }
+
+                currentIndex = endIndex;
+
+                // Hide loading animation
+                loading.classList.remove('active');
+                loadMoreBtn.disabled = false;
+
+                // Hide load more button if all arts are loaded
+                if (currentIndex >= allArts.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+
+                // Update button text
+                const remaining = allArts.length - currentIndex;
+                if (remaining > 0) {
+                    loadMoreBtn.textContent = `Carregar Mais Artes (${remaining} restantes)`;
+                }
+            }, 1000);
+        }
+
+        // Function to initialize the gallery
+        function initializeGallery() {
+            if (allArts.length === 0) {
+                // Show message when no arts are available
+                document.getElementById('galleryGrid').innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #6B7280;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Galeria em Preparação</h3>
+                        <p>As artes serão carregadas em breve. Aguarde!</p>
+                    </div>
+                `;
+                document.getElementById('loadMoreBtn').style.display = 'none';
+                return;
+            }
+
+            // Load first batch of arts
+            loadMoreArts();
+        }
+
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Initialize gallery when page loads
+        document.addEventListener('DOMContentLoaded', initializeGallery);
+
+        // Example function to add arts (you can call this to add your arts)
+        function loadArtsData() {
+            // Example of how to add arts - replace with your actual data
+            // addArt("https://example.com/image1.jpg", "Arte Gospel 1", "https://canva.com/edit1");
+            // addArt("https://example.com/image2.jpg", "Arte Gospel 2", "https://canva.com/edit2");
+
+            // After adding all arts, reinitialize the gallery
+            currentIndex = 0;
+            document.getElementById('galleryGrid').innerHTML = '';
+            document.getElementById('loadMoreBtn').style.display = 'block';
+            initializeGallery();
+        }
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'96b0e85150f42800',t:'MTc1NDUwODE5My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
