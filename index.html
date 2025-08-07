@@ -14,13 +14,30 @@
 </head>
 
 <body>
-    <div id="g_id_onload" data-client_id="77975194047-bsf0hqo9kb443esnm20urh4iv2qgfhhq.apps.googleusercontent.com"
-        data-context="signin" data-ux_mode="popup" data-callback="handleCredentialResponse" data-auto_prompt="false">
+    <div id="authOverlay" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+">
+        <h2>🔒 Faça login com Google para acessar</h2>
+        <div id="g_id_onload" data-client_id="77975194047-bsf0hqo9kb443esnm20urh4iv2qgfhhq.apps.googleusercontent.com"
+            data-context="signin" data-ux_mode="popup" data-callback="handleCredentialResponse"
+            data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+            data-text="sign_in_with" data-size="large" data-logo_alignment="left">
+        </div>
     </div>
 
-    <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="sign_in_with"
-        data-size="large" data-logo_alignment="left">
-    </div>
 
     <!-- Overlay opcional -->
     <div id="authOverlay">Autenticação necessária</div>
@@ -38,7 +55,8 @@
     <section class="gallery-section">
         <div class="container">
             <h2 class="section-title">Galeria de Artes Gospel</h2>
-            <p class="section-subtitle">Designs profissionais e editáveis para transformar a comunicação da sua igreja
+            <p class="section-subtitle">Designs profissionais e editáveis para transformar a comunicação da sua
+                igreja
             </p>
 
             <div class="gallery-container">

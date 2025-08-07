@@ -1,20 +1,24 @@
+const emailsPermitidos = [
+  "contatocertoouerrado@gmail.com",
+  "admin@luzearte.com",
+  "equipe@luzearte.com"
+];
+
 window.handleCredentialResponse = function(response) {
   const token = response.credential;
   const payload = JSON.parse(atob(token.split('.')[1]));
-  console.log("Informações do usuário:", payload);
+  const email = payload.email;
+
+  if (emailsPermitidos.includes(email)) {
+    console.log("Acesso autorizado:", email);
+    localStorage.setItem("loggedIn", "true");
+    document.getElementById("authOverlay").style.display = "none";
+  } else {
+    console.log("Acesso negado:", email);
+    alert("Você não tem permissão para acessar este site.");
+  }
 };
 
-
-function handleCredentialResponse(response) {
-  const token = response.credential;
-  const payload = JSON.parse(atob(token.split('.')[1]));
-  console.log("Informações do usuário:", payload);
-
-  // Exemplo de uso
-  localStorage.setItem("loggedIn", "true");
-  const overlay = document.getElementById("authOverlay");
-  if (overlay) overlay.style.display = "none";
-}
 
 
 function parseJwt(token) {
