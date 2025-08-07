@@ -1,6 +1,6 @@
 const emailsPermitidos = [
   "contatocertoouerrado@gmail.com",
-  "admin@luzearte.com",
+  "alinerocha10203040@gmail.com",
   "equipe@luzearte.com"
 ];
 
@@ -19,8 +19,6 @@ window.handleCredentialResponse = function(response) {
   }
 };
 
-
-
 function parseJwt(token) {
     const base64Url = token.split('.')[1];
     const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -35,72 +33,72 @@ let allArts = [
     {
         image: "images/1.png", // Caminho relativo para sua imagem
         title: "Arte Gospel - Louvor e Adoração",
-        editLink: "https://canva.com/edit-link-1"
+        editLink: "https://www.canva.com/design/DAGvVAYNESY/8sKYxoZgkD6YxNwoa54CxQ/edit?utm_content=DAGvVAYNESY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/2.png",
         title: "Design Inspiracional - Fé",
-        editLink: "https://canva.com/edit-link-2"
+        editLink: "https://www.canva.com/design/DAGvVISVQvg/hE40mHg6PL4aOi7Nf-EhZg/edit?utm_content=DAGvVISVQvg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/3.png",
         title: "Arte para Culto Dominical",
-        editLink: "https://canva.com/edit-link-3"
+        editLink: "https://www.canva.com/design/DAGvVKmKbOk/2FRVPOHx6i1gg-uJ7XrGcw/edit?utm_content=DAGvVKmKbOk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/4.png",
         title: "Template Versículo Bíblico",
-        editLink: "https://canva.com/edit-link-4"
+        editLink: "https://www.canva.com/design/DAGvVDdBKCA/FjoZ07b5FY8ChR5hw3w1Vw/edit?utm_content=DAGvVDdBKCA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/5.png",
         title: "Design para Eventos Gospel",
-        editLink: "https://canva.com/edit-link-5"
+        editLink: "https://www.canva.com/design/DAGvVC1Vp-I/PaSRrd-JKJiMyPwtKmoPaA/edit?utm_content=DAGvVC1Vp-I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/6.png",
         title: "Arte Motivacional Cristã",
-        editLink: "https://canva.com/edit-link-6"
+        editLink: "https://www.canva.com/design/DAGvVEiFpmQ/VOxwkwj7-7jUm2EVkGBiZQ/edit?utm_content=DAGvVEiFpmQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/7.png",
         title: "Template para Pregação",
-        editLink: "https://canva.com/edit-link-7"
+        editLink: "https://www.canva.com/design/DAGvVPOtGvM/DEDklagSkByw6iY2O5trZw/edit?utm_content=DAGvVPOtGvM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/8.png",
         title: "Design para Redes Sociais",
-        editLink: "https://canva.com/edit-link-8"
+        editLink: "https://www.canva.com/design/DAGvVGsGa-w/P3yreoNUsxoVlogFFFmrsA/edit?utm_content=DAGvVGsGa-w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/9.png",
         title: "Arte para Ministério Jovem",
-        editLink: "https://canva.com/edit-link-9"
+        editLink: "https://www.canva.com/design/DAGvVCdPep8/w89aRxcGQdfHPJVSaPC0eQ/edit?utm_content=DAGvVCdPep8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/10.png",
         title: "Template Convite Gospel",
-        editLink: "https://canva.com/edit-link-10"
+        editLink: "https://www.canva.com/design/DAGvVMIzGPc/dw3G86DjrSiob8vILShFrQ/edit?utm_content=DAGvVMIzGPc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/11.png",
         title: "Design para Conferência",
-        editLink: "https://canva.com/edit-link-11"
+        editLink: "https://www.canva.com/design/DAGvVHCWjTU/hMljoALFlbYK5syp9j1FoQ/edit?utm_content=DAGvVHCWjTU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/12.png",
         title: "Arte Devocional Diário",
-        editLink: "https://canva.com/edit-link-12"
+        editLink: "https://www.canva.com/design/DAGvZ49vWMY/cJu_n4bJ4_Rj-zG_6TUtPA/edit?utm_content=DAGvZ49vWMY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/13.png", // Caminho relativo para sua imagem
         title: "Arte Gospel - Louvor e Adoração",
-        editLink: "https://canva.com/edit-link-1"
+        editLink: "https://www.canva.com/design/DAGvVAQniPc/64ttIv9vbfSOGuartP7WzA/edit?utm_content=DAGvVAQniPc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/14.png",
         title: "Design Inspiracional - Fé",
-        editLink: "https://canva.com/edit-link-2"
+        editLink: "https://www.canva.com/design/DAGvVOgeCNw/GNvQOyxWRrXYvHi4RktXjA/edit?utm_content=DAGvVOgeCNw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     },
     {
         image: "images/15.png",
