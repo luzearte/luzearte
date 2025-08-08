@@ -1,7 +1,7 @@
 const emailsPermitidos = [
   "contatocertoouerrado@gmail.com",
   "alinerocha10203040@gmail.com",
-  "carlosgabrielqqorb@gmail.com"
+  "teste@gmail.com"
 ];
 
 window.handleCredentialResponse = function(response) {
