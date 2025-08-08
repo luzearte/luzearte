@@ -1,7 +1,7 @@
 const emailsPermitidos = [
   "contatocertoouerrado@gmail.com",
   "alinerocha10203040@gmail.com",
-  "teste@gmail.com"
+  "equipe@luzearte.com"
 ];
 
 window.handleCredentialResponse = function(response) {
@@ -583,9 +583,6 @@ function createArtCard(art) {
                          onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xMDAgNzBMMTMwIDEzMEg3MEwxMDAgNzBaIiBmaWxsPSIjOUI5QkEwIi8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjgwIiByPSI4IiBmaWxsPSIjOUI5QkEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkltYWdlbSBuw6NvIGVuY29udHJhZGE8L3RleHQ+Cjwvc3ZnPg=='; this.alt='Imagem não encontrada';">
                     <div class="art-info">
                         <h3 class="art-title">${art.title}</h3>
-                        <a href="${art.editLink}" target="_blank" class="edit-button">
-                            Editar no Canva
-                        </a>
                     </div>
                 </div>
             `;
@@ -682,4 +679,119 @@ function loadArtsData() {
     initializeGallery();
 }
 
+function scrollToOffer() {
+            document.getElementById('offer').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
 
+        function purchase() {
+            // Simulação de processo de compra
+            alert('🎉 Redirecionando para o checkout seguro...\n\nVocê está adquirindo:\n✅ Curso Completo de Edição de Imagens\n💰 Valor: R$ 19,99\n🔒 Pagamento 100% Seguro\n⚡ Acesso Imediato');
+            
+            // Aqui você integraria com sua plataforma de pagamento real
+            // window.location.href = 'https://checkout.suaplataforma.com/curso-edicao';
+        }
+
+        // Sistema de notificações de vendas
+        const customers = [
+            { name: "Maria Silva", city: "São Paulo, SP" },
+            { name: "João Santos", city: "Rio de Janeiro, RJ" },
+            { name: "Ana Costa", city: "Belo Horizonte, MG" },
+            { name: "Pedro Lima", city: "Salvador, BA" },
+            { name: "Carla Oliveira", city: "Brasília, DF" },
+            { name: "Lucas Ferreira", city: "Curitiba, PR" },
+            { name: "Juliana Rocha", city: "Fortaleza, CE" },
+            { name: "Rafael Alves", city: "Porto Alegre, RS" },
+            { name: "Fernanda Dias", city: "Recife, PE" },
+            { name: "Bruno Martins", city: "Goiânia, GO" }
+        ];
+
+        function showNotification() {
+            const customer = customers[Math.floor(Math.random() * customers.length)];
+            const timeAgo = Math.floor(Math.random() * 10) + 1;
+            
+            const notification = document.createElement('div');
+            notification.className = 'bg-green-500 text-white p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-500 max-w-sm';
+            notification.innerHTML = `
+                <div class="flex items-center space-x-3">
+                    <div class="bg-white rounded-full p-1">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-semibold text-sm">${customer.name}</div>
+                        <div class="text-xs opacity-90">${customer.city}</div>
+                        <div class="text-xs opacity-75">Comprou há ${timeAgo} min</div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('notification-container').appendChild(notification);
+            
+            // Animar entrada
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Remover após 4 segundos
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    notification.remove();
+                }, 500);
+            }, 4000);
+        }
+
+        // Mostrar primeira notificação após 3 segundos
+        setTimeout(showNotification, 3000);
+        
+        // Continuar mostrando notificações a cada 8-15 segundos
+        setInterval(() => {
+            showNotification();
+        }, Math.random() * 7000 + 8000);
+
+        // Animação de contagem regressiva (simulada)
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const distance = tomorrow.getTime() - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Você pode adicionar um elemento de countdown se desejar
+        }
+
+        // Efeito de scroll suave
+        document.addEventListener('DOMContentLoaded', function() {
+            // Adiciona efeito de fade-in aos elementos quando aparecem na tela
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observa elementos para animação
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+
+(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96bf477fc6116f85',t:'MTc1NDY1ODg5My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
