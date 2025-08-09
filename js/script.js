@@ -9,14 +9,14 @@ window.handleCredentialResponse = function(response) {
   const payload = JSON.parse(atob(token.split('.')[1]));
   const email = payload.email;
 
-  if (emailsPermitidos.includes(email)) {
+/*  if (emailsPermitidos.includes(email)) {
     console.log("Acesso autorizado:", email);
     localStorage.setItem("loggedIn", "true");
     document.getElementById("authOverlay").style.display = "none";
   } else {
     console.log("Acesso negado:", email);
     alert("Você não tem permissão para acessar este site.");
-  }
+  }*/
 };
 
 function parseJwt(token) {
