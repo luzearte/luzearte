@@ -31,427 +31,427 @@ function parseJwt(token) {
 // Sample data structure - you can replace this with your actual data
 let allArts = [
     {
-        image: "images/1.png", // Caminho relativo para sua imagem
+        image: "images/1.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Congresso de Mulheres",
     },
     {
-        image: "images/2.png",
+        image: "images/2.webp",
         title: "Arte Gospel - Culto de Oração",
     },
     {
-        image: "images/3.png",
+        image: "images/3.webp",
         title: "Arte Gospel - Culto Jovem",
     },
     {
-        image: "images/4.png",
+        image: "images/4.webp",
         title: "Arte Gospel - Culto da Família",
     },
     {
-        image: "images/5.png",
+        image: "images/5.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/6.png",
+        image: "images/6.webp",
         title: "Arte Gospel - Culto Segunda",
     },
     {
-        image: "images/7.png",
+        image: "images/7.webp",
         title: "Arte Gospel - Batismo",
     },
     {
-        image: "images/8.png",
+        image: "images/8.webp",
         title: "Arte Gospel - Conferência Jovem",
     },
     {
-        image: "images/9.png",
+        image: "images/9.webp",
         title: "Arte Gospel - Culto da Vitória",
     },
     {
-        image: "images/10.png",
+        image: "images/10.webp",
         title: "Arte Gospel - Culto de Ensino",
     },
     {
-        image: "images/11.png",
+        image: "images/11.webp",
         title: "Arte Gospel - Culto FÉ",
     },
     {
-        image: "images/12.png",
+        image: "images/12.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/13.png", // Caminho relativo para sua imagem
+        image: "images/13.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/14.png",
+        image: "images/14.webp",
         title: "Arte Gospel - Culto Jejum e Oração",
     },
     {
-        image: "images/15.png",
+        image: "images/15.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/16.png",
+        image: "images/16.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/17.png",
+        image: "images/17.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/18.png",
+        image: "images/18.webp",
         title: "Arte Gospel - Culto Jovem",
     },
     {
-        image: "images/19.png",
+        image: "images/19.webp",
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/20.png",
+        image: "images/20.webp",
         title: "Arte Gospel - Culto de Missões",
     },
     {
-        image: "images/21.png",
+        image: "images/21.webp",
         title: "Arte Gospel - Culto de Ensino",
     },
     {
-        image: "images/22.png",
+        image: "images/22.webp",
         title: "Arte Gospel - Aniversário do Pastor",
     },
     {
-        image: "images/23.png",
+        image: "images/23.webp",
         title: "Arte Gospel - Culto de Oração",
     },
     {
-        image: "images/24.png",
+        image: "images/24.webp",
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/25.png",
+        image: "images/25.webp",
         title: "Arte Gospel - EBD",
     },
     {
-        image: "images/26.png", // Caminho relativo para sua imagem
+        image: "images/26.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto da Família",
     },
     {
-        image: "images/27.png",
+        image: "images/27.webp",
         title: "Arte Gospel - Culto de Celebração",
     },
     {
-        image: "images/28.png",
+        image: "images/28.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/29.png",
+        image: "images/29.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/30.png",
+        image: "images/30.webp",
         title: "Arte Gospel - Culto da Palavra",
     },
     {
-        image: "images/31.png",
+        image: "images/31.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/32.png",
+        image: "images/32.webp",
         title: "Arte Gospel - Culto de Ensino",
     },
     {
-        image: "images/33.png",
+        image: "images/33.webp",
         title: "Arte Gospel - Culto das Mulheres",
     },
     {
-        image: "images/34.png",
+        image: "images/34.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/35.png",
+        image: "images/35.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/36.png",
+        image: "images/36.webp",
         title: "Arte Gospel - Culto Domingo",
     },
     {
-        image: "images/37.png",
+        image: "images/37.webp",
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/38.png", // Caminho relativo para sua imagem
+        image: "images/38.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/39.png",
+        image: "images/39.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/40.png",
+        image: "images/40.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/41.png",
+        image: "images/41.webp",
         title: "Arte Gospel - EBD",
     },
     {
-        image: "images/42.png",
+        image: "images/42.webp",
         title: "Arte Gospel - Conferência",
     },
     {
-        image: "images/43.png",
+        image: "images/43.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/44.png",
+        image: "images/44.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/45.png",
+        image: "images/45.webp",
         title: "Arte Gospel - Culto de Adolescente",
     },
     {
-        image: "images/46.png",
+        image: "images/46.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/47.png",
+        image: "images/47.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/48.png",
+        image: "images/48.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/49.png",
+        image: "images/49.webp",
         title: "Arte Gospel - Culto da Família",
     },
     {
-        image: "images/50.png",
+        image: "images/50.webp",
         title: "Arte Gospel - Batismo",
     },
     {
-        image: "images/51.png", // Caminho relativo para sua imagem
+        image: "images/51.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/52.png",
+        image: "images/52.webp",
         title: "Arte Gospel - Festividade",
     },
     {
-        image: "images/53.png",
+        image: "images/53.webp",
         title: "Arte Gospel - Culto de Jovens",
     },
     {
-        image: "images/54.png",
+        image: "images/54.webp",
         title: "Arte Gospel - Culto de Ensino da Palavra",
     },
     {
-        image: "images/55.png",
+        image: "images/55.webp",
         title: "Arte Gospel - Culto de Gratidão",
     },
     {
-        image: "images/56.png",
+        image: "images/56.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/57.png",
+        image: "images/57.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/58.png",
+        image: "images/58.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/59.png",
+        image: "images/59.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/60.png",
+        image: "images/60.webp",
         title: "Arte Gospel - Encontro de Casais",
     },
     {
-        image: "images/61.png",
+        image: "images/61.webp",
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/62.png",
+        image: "images/62.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/63.png", // Caminho relativo para sua imagem
+        image: "images/63.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/64.png",
+        image: "images/64.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/65.png",
+        image: "images/65.webp",
         title: "Arte Gospel - Culto Final de Ano",
     },
     {
-        image: "images/66.png",
+        image: "images/66.webp",
         title: "Arte Gospel - Culto de Ação de Graças",
     },
     {
-        image: "images/67.png",
+        image: "images/67.webp",
         title: "Arte Gospel - Culto da Família",
     },
     {
-        image: "images/68.png",
+        image: "images/68.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/69.png",
+        image: "images/69.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/70.png", // Caminho relativo para sua imagem
+        image: "images/70.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Ensino",
     },
     {
-        image: "images/71.png",
+        image: "images/71.webp",
         title: "Arte Gospel - Culto de Celebração",
     },
     {
-        image: "images/72.png",
+        image: "images/72.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/73.png",
+        image: "images/73.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/74.png",
+        image: "images/74.webp",
         title: "Arte Gospel - Culto de Ensino",
     },
     {
-        image: "images/75.png",
+        image: "images/75.webp",
         title: "Arte Gospel - Festividade",
     },
     {
-        image: "images/76.png",
+        image: "images/76.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/77.png",
+        image: "images/77.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/78.png",
+        image: "images/78.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/79.png",
+        image: "images/79.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/80.png",
+        image: "images/80.webp",
         title: "Arte Gospel - Culto da Vitória",
     },
     {
-        image: "images/81.png",
+        image: "images/81.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/82.png", // Caminho relativo para sua imagem
+        image: "images/82.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/83.png",
+        image: "images/83.webp",
         title: "Arte Gospel - Batismo",
     },
     {
-        image: "images/84.png",
+        image: "images/84.webp",
         title: "Arte Gospel - Culto de Jovem",
     },
     {
-        image: "images/85.png",
+        image: "images/85.webp",
         title: "Arte Gospel - Culto de Oração",
     },
     {
-        image: "images/86.png",
+        image: "images/86.webp",
         title: "Arte Gospel - Culto de Família",
     },
     {
-        image: "images/87.png",
+        image: "images/87.webp",
         title: "Arte Gospel - Culto de Mulheres",
     },
     {
-        image: "images/88.png",
+        image: "images/88.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/89.png",
+        image: "images/89.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/90.png",
+        image: "images/90.webp",
         title: "Arte Gospel - Culto de Adolescentes",
     },
     {
-        image: "images/91.png",
+        image: "images/91.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     },
     {
-        image: "images/92.png",
+        image: "images/92.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/93.png", // Caminho relativo para sua imagem
+        image: "images/93.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/94.png",
+        image: "images/94.webp",
         title: "Arte Gospel - Culto de Domingo",
     },
     {
-        image: "images/95.png",
+        image: "images/95.webp",
         title: "Arte Gospel - Festividade",
     },
     {
-        image: "images/96.png",
+        image: "images/96.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/97.png",
+        image: "images/97.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/98.png",
+        image: "images/98.webp",
         title: "Arte Gospel - Festividade",
     },
     {
-        image: "images/99.png",
+        image: "images/99.webp",
         title: "Arte Gospel - Agenda Ministerial",
     },
     {
-        image: "images/100.png",
+        image: "images/100.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/101.png",
+        image: "images/101.webp",
         title: "Arte Gospel - Conferência",
     },
     {
-        image: "images/102.png",
+        image: "images/102.webp",
         title: "Arte Gospel - Vigília",
     },
     {
-        image: "images/103.png",
+        image: "images/103.webp",
         title: "Arte Gospel - Culto de Missões",
     },
     {
-        image: "images/104.png",
+        image: "images/104.webp",
         title: "Arte Gospel - Culto de Campanha",
     },
     {
-        image: "images/105.png",
+        image: "images/105.webp",
         title: "Arte Gospel - Culto de Missões",
     },
     {
-        image: "images/106.png",
+        image: "images/106.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
     }
 
