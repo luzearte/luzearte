@@ -31,532 +31,532 @@ function parseJwt(token) {
 // Sample data structure - you can replace this with your actual data
 let allArts = [
     {
-        image: "images/1.png", // Caminho relativo para sua imagem
+        image: "images/1.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Congresso de Mulheres",
         editLink: "https://www.canva.com/design/DAGvVAYNESY/nwg49aS9FkPPcc4aArU7Mw/view?utm_content=DAGvVAYNESY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/2.png",
+        image: "images/2.webp",
         title: "Arte Gospel - Culto de Oração",
         editLink: "https://www.canva.com/design/DAGvVISVQvg/kRXQk81OTiI4qRF9hItS2Q/view?utm_content=DAGvVISVQvg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/3.png",
+        image: "images/3.webp",
         title: "Arte Gospel - Culto Jovem",
         editLink: "https://www.canva.com/design/DAGvVKmKbOk/B-fCSUgTXRrp9OqJTZVmZQ/view?utm_content=DAGvVKmKbOk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/4.png",
+        image: "images/4.webp",
         title: "Arte Gospel - Culto da Família",
         editLink: "https://www.canva.com/design/DAGvVDdBKCA/I9mQk6rN3x8doR7AuyUkLw/view?utm_content=DAGvVDdBKCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/5.png",
+        image: "images/5.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvVC1Vp-I/X9FeZ3PvaZ38OdkD9LmCFQ/view?utm_content=DAGvVC1Vp-I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/6.png",
+        image: "images/6.webp",
         title: "Arte Gospel - Culto Segunda",
         editLink: "https://www.canva.com/design/DAGvVEiFpmQ/ZBb7P7BsRUOm__twhah7PA/view?utm_content=DAGvVEiFpmQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/7.png",
+        image: "images/7.webp",
         title: "Arte Gospel - Batismo",
         editLink: "https://www.canva.com/design/DAGvVPOtGvM/5AUyDwOP3X4mnOAZjTc8kg/view?utm_content=DAGvVPOtGvM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/8.png",
+        image: "images/8.webp",
         title: "Arte Gospel - Conferência Jovem",
         editLink: "https://www.canva.com/design/DAGvVGsGa-w/FzAWhqsMM_qrjo9ta32bqQ/view?utm_content=DAGvVGsGa-w&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/9.png",
+        image: "images/9.webp",
         title: "Arte Gospel - Culto da Vitória",
         editLink: "https://www.canva.com/design/DAGvVCdPep8/1QM1D3iOD5QhbFPNVUYxfg/view?utm_content=DAGvVCdPep8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/10.png",
+        image: "images/10.webp",
         title: "Arte Gospel - Culto de Ensino",
         editLink: "https://www.canva.com/design/DAGvVMIzGPc/lwf4kCjR2UiJXgCVwP67bA/view?utm_content=DAGvVMIzGPc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/11.png",
+        image: "images/11.webp",
         title: "Arte Gospel - Culto FÉ",
         editLink: "https://www.canva.com/design/DAGvVHCWjTU/1P1aoCSsSLo4tj8jkZvIpw/view?utm_content=DAGvVHCWjTU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/12.png",
+        image: "images/12.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvZ49vWMY/-JT97V4N5de96f79u7SXMg/view?utm_content=DAGvZ49vWMY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/13.png", // Caminho relativo para sua imagem
+        image: "images/13.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvVAQniPc/BHp1X2rT1ToED4kFSOrUhQ/view?utm_content=DAGvVAQniPc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/14.png",
+        image: "images/14.webp",
         title: "Arte Gospel - Culto Jejum e Oração",
         editLink: "https://www.canva.com/design/DAGvVOgeCNw/InpYIAtJaR9K84GsOwAO4g/view?utm_content=DAGvVOgeCNw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/15.png",
+        image: "images/15.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvVK4u8bo/lF7LgxFrhNALjkmE7fu07Q/view?utm_content=DAGvVK4u8bo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/16.png",
+        image: "images/16.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvVAvd4xM/tQJ1fZvs73N6oLuEz-Pd1w/view?utm_content=DAGvVAvd4xM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/17.png",
+        image: "images/17.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvVB4FmDc/AZ6EyZUvXKiz6OEk8FENdQ/view?utm_content=DAGvVB4FmDc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/18.png",
+        image: "images/18.webp",
         title: "Arte Gospel - Culto Jovem",
         editLink: "https://www.canva.com/design/DAGvVJBWeQk/7wa8ywAu-EVUGawfu0msjA/view?utm_content=DAGvVJBWeQk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/19.png",
+        image: "images/19.webp",
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvVODx_XE/qswrOQisMM89Qmw4U8_NWw/view?utm_content=DAGvVODx_XE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/20.png",
+        image: "images/20.webp",
         title: "Arte Gospel - Culto de Missões",
         editLink: "https://www.canva.com/design/DAGvVAa2xUc/v-nu7iP2oOc2UbPnTTQgrg/view?utm_content=DAGvVAa2xUc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/21.png",
+        image: "images/21.webp",
         title: "Arte Gospel - Culto de Ensino",
         editLink: "https://www.canva.com/design/DAGvVLzMaQU/kaFxCiUbTMCtaXckuXnCPQ/view?utm_content=DAGvVLzMaQU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/22.png",
+        image: "images/22.webp",
         title: "Arte Gospel - Aniversário do Pastor",
         editLink: "https://www.canva.com/design/DAGvVHwYMGc/NJfP0DBzSPt9QNRpupTQeA/view?utm_content=DAGvVHwYMGc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/23.png",
+        image: "images/23.webp",
         title: "Arte Gospel - Culto de Oração",
         editLink: "https://www.canva.com/design/DAGvVL2j068/urhdPCJEAKzqIh9F9xu4xA/view?utm_content=DAGvVL2j068&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/24.png",
+        image: "images/24.webp",
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvVOHLQLg/JGNpArRcG8llp6T_Rz7dFQ/view?utm_content=DAGvVOHLQLg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/25.png",
+        image: "images/25.webp",
         title: "Arte Gospel - EBD",
         editLink: "https://www.canva.com/design/DAGvVCNQLYc/etH8g6mkqiyJ3mxKOne04Q/view?utm_content=DAGvVCNQLYc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/26.png", // Caminho relativo para sua imagem
+        image: "images/26.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto da Família",
         editLink: "https://www.canva.com/design/DAGvVOu3Qtk/hFTnz3nL1hdK46UFjcwpRQ/view?utm_content=DAGvVOu3Qtk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/27.png",
+        image: "images/27.webp",
         title: "Arte Gospel - Culto de Celebração",
         editLink: "https://www.canva.com/design/DAGvVEGrZro/mq0A94ksvQJFUKASxBWzeg/view?utm_content=DAGvVEGrZro&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/28.png",
+        image: "images/28.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvVBVKAjI/K3i6Cg4A_gpaQxuCpIBQlg/view?utm_content=DAGvVBVKAjI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/29.png",
+        image: "images/29.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvVGcytsA/i9b7_FmYRMR6It59DEgSNw/view?utm_content=DAGvVGcytsA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/30.png",
+        image: "images/30.webp",
         title: "Arte Gospel - Culto da Palavra",
         editLink: "https://www.canva.com/design/DAGvVIPRlxQ/iQg0UWI2-TLSec6EDxJwFA/view?utm_content=DAGvVIPRlxQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/31.png",
+        image: "images/31.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvVGhQgQQ/75jvFihytfLAa38ThPte4g/view?utm_content=DAGvVGhQgQQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/32.png",
+        image: "images/32.webp",
         title: "Arte Gospel - Culto de Ensino",
         editLink: "https://www.canva.com/design/DAGvVL4fGKk/ogXTz40HLFAgxs4EGYdCRw/view?utm_content=DAGvVL4fGKk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/33.png",
+        image: "images/33.webp",
         title: "Arte Gospel - Culto das Mulheres",
         editLink: "https://www.canva.com/design/DAGvVDmuhzM/SI7zpr3UDVzKYnQmaLiB2g/view?utm_content=DAGvVDmuhzM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/34.png",
+        image: "images/34.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvad29EFY/swOrp-Cug9kUnyI5w57tUg/view?utm_content=DAGvad29EFY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/35.png",
+        image: "images/35.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaOJzkeY/tQdpV-8UoCUaNws1IFFnlQ/view?utm_content=DAGvaOJzkeY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/36.png",
+        image: "images/36.webp",
         title: "Arte Gospel - Culto Domingo",
         editLink: "https://www.canva.com/design/DAGvaT3mc8Q/BMBz5P6oUhkQPXJ8X4vatg/view?utm_content=DAGvaT3mc8Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/37.png",
+        image: "images/37.webp",
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvabzySb0/HtxZdNfB-2jv7dyTH_xsyA/view?utm_content=DAGvabzySb0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/38.png", // Caminho relativo para sua imagem
+        image: "images/38.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvaQZ1wak/iWzW69aGcqYhyE_8TZBGcQ/view?utm_content=DAGvaQZ1wak&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/39.png",
+        image: "images/39.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvaT_Dkm0/9r3CLCbMFG7p8wm8il-2Yw/view?utm_content=DAGvaT_Dkm0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/40.png",
+        image: "images/40.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaex44yA/l848uqD4xAjanYPokfNRMw/view?utm_content=DAGvaex44yA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/41.png",
+        image: "images/41.webp",
         title: "Arte Gospel - EBD",
         editLink: "https://www.canva.com/design/DAGvaUTzcIQ/nuoaHIkmScVAw6AbS3Hk1A/view?utm_content=DAGvaUTzcIQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/42.png",
+        image: "images/42.webp",
         title: "Arte Gospel - Conferência",
         editLink: "https://www.canva.com/design/DAGvaSn45a4/4xwl46_PyaG18-6myopmDw/view?utm_content=DAGvaSn45a4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/43.png",
+        image: "images/43.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvaUBuWDU/R2WXwybtybFNO3Zt3dvfIw/view?utm_content=DAGvaUBuWDU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/44.png",
+        image: "images/44.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaAjlesM/57b8PAjcmUfKKq0Bu9P5NA/view?utm_content=DAGvaAjlesM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/45.png",
+        image: "images/45.webp",
         title: "Arte Gospel - Culto de Adolescente",
         editLink: "https://www.canva.com/design/DAGvaLZRHe0/6_3xta8MWS30v3fk033gzg/view?utm_content=DAGvaLZRHe0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/46.png",
+        image: "images/46.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvaAFLhcI/j7oNOCRwcSV1QQZG4LC_1Q/view?utm_content=DAGvaAFLhcI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/47.png",
+        image: "images/47.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaC0D4sU/z10L3cV9j_FBfh8uRqglQQ/view?utm_content=DAGvaC0D4sU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/48.png",
+        image: "images/48.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaFOHK2I/hSgHST-1UnCN2On0-kcJeA/view?utm_content=DAGvaFOHK2I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/49.png",
+        image: "images/49.webp",
         title: "Arte Gospel - Culto da Família",
         editLink: "https://www.canva.com/design/DAGvaOmF6l0/R1L2QBkfPxurXkdwKWLo5Q/view?utm_content=DAGvaOmF6l0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/50.png",
+        image: "images/50.webp",
         title: "Arte Gospel - Batismo",
         editLink: "https://www.canva.com/design/DAGvaHm6Rzo/GfL0LM23EnAFEmtEEIWK1g/view?utm_content=DAGvaHm6Rzo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/51.png", // Caminho relativo para sua imagem
+        image: "images/51.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvaGXKYkQ/sYhCiaT5m6S6X8hkJkmRUQ/view?utm_content=DAGvaGXKYkQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/52.png",
+        image: "images/52.webp",
         title: "Arte Gospel - Festividade",
         editLink: "https://www.canva.com/design/DAGvaFsP6Kg/Qh5APyC9XOyxyebFhQ6G_w/view?utm_content=DAGvaFsP6Kg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/53.png",
+        image: "images/53.webp",
         title: "Arte Gospel - Culto de Jovens",
         editLink: "https://www.canva.com/design/DAGvaJZeRrE/AiSWtp3uwmr7xeHzmvdiZQ/view?utm_content=DAGvaJZeRrE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/54.png",
+        image: "images/54.webp",
         title: "Arte Gospel - Culto de Ensino da Palavra",
         editLink: "https://www.canva.com/design/DAGvaJCor3Y/a5Re02Ekh0n1Y1IEXvoZXw/view?utm_content=DAGvaJCor3Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/55.png",
+        image: "images/55.webp",
         title: "Arte Gospel - Culto de Gratidão",
         editLink: "https://www.canva.com/design/DAGvaAKWuBo/oq5RA8hyoyiPkb9lgdLShA/view?utm_content=DAGvaAKWuBo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/56.png",
+        image: "images/56.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaCbvu_4/FwSN6md2F3cCBPXu2KOm6w/view?utm_content=DAGvaCbvu_4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/57.png",
+        image: "images/57.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvaDWjahQ/1pG26cb4bPY29xGbLhpH5A/view?utm_content=DAGvaDWjahQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/58.png",
+        image: "images/58.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaGPwoGU/lVDEqPI_HmdilIRWy0-B5Q/view?utm_content=DAGvaGPwoGU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/59.png",
+        image: "images/59.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaEyzEiw/FwmCplK4fCrldkRgnrPLsw/view?utm_content=DAGvaEyzEiw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/60.png",
+        image: "images/60.webp",
         title: "Arte Gospel - Encontro de Casais",
         editLink: "https://www.canva.com/design/DAGvaM_YFRw/tIxLq69N3PMyeOdlnKSvjA/view?utm_content=DAGvaM_YFRw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/61.png",
+        image: "images/61.webp",
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvaOc1VrA/07nZhYW5YfzH3UB7UjHCmQ/view?utm_content=DAGvaOc1VrA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/62.png",
+        image: "images/62.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvaLFeaQs/Q8cUeSdOirc8t65X7fzYDw/view?utm_content=DAGvaLFeaQs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/63.png", // Caminho relativo para sua imagem
+        image: "images/63.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvaPl3xFQ/yyH8U1ilNibeLXWbC4hcFA/view?utm_content=DAGvaPl3xFQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/64.png",
+        image: "images/64.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvaAEX6Vo/wSmayDKLe9Rf8s13d3sdiw/view?utm_content=DAGvaAEX6Vo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/65.png",
+        image: "images/65.webp",
         title: "Arte Gospel - Culto Final de Ano",
         editLink: "https://www.canva.com/design/DAGvaGSLOGU/yr_xBQZ3tTmg6pxJCqUBxA/view?utm_content=DAGvaGSLOGU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/66.png",
+        image: "images/66.webp",
         title: "Arte Gospel - Culto de Ação de Graças",
         editLink: "https://www.canva.com/design/DAGvaHdzofU/b8icxqOKAFihz51AA_NnHw/view?utm_content=DAGvaHdzofU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/67.png",
+        image: "images/67.webp",
         title: "Arte Gospel - Culto da Família",
         editLink: "https://www.canva.com/design/DAGvaNq4PCk/arJ7X0cZH_F_mFabCh6Q4g/view?utm_content=DAGvaNq4PCk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/68.png",
+        image: "images/68.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaMUacQE/JQ5zVQ3VnzLQBaGituNh-g/view?utm_content=DAGvaMUacQE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/69.png",
+        image: "images/69.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvaP3JuHQ/-DcoAZavxwAL39pty_UYfQ/view?utm_content=DAGvaP3JuHQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/70.png", // Caminho relativo para sua imagem
+        image: "images/70.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Ensino",
         editLink: "https://www.canva.com/design/DAGvaA03st4/6Qvk8-ZERBhztUuuNGKhEg/view?utm_content=DAGvaA03st4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/71.png",
+        image: "images/71.webp",
         title: "Arte Gospel - Culto de Celebração",
         editLink: "https://www.canva.com/design/DAGvaNV8RPQ/hzrAyikoEzkBA26QNAqUJw/view?utm_content=DAGvaNV8RPQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/72.png",
+        image: "images/72.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaBjJbYw/zhLnhacUjmR5mhp_n0Aw7A/view?utm_content=DAGvaBjJbYw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/73.png",
+        image: "images/73.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvaB3hCBE/cqFoquGneegmBzJPvpMcQg/view?utm_content=DAGvaB3hCBE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/74.png",
+        image: "images/74.webp",
         title: "Arte Gospel - Culto de Ensino",
         editLink: "https://www.canva.com/design/DAGvaJCY0Wk/LsjqCfw__Md9G4vkt1QLYg/view?utm_content=DAGvaJCY0Wk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/75.png",
+        image: "images/75.webp",
         title: "Arte Gospel - Festividade",
         editLink: "https://www.canva.com/design/DAGvacx4SMg/kiLcay-7zTjoMAGypSa8Qw/view?utm_content=DAGvacx4SMg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/76.png",
+        image: "images/76.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvaaktnLA/jBvX6DF8ONnBFxan6ieRtg/view?utm_content=DAGvaaktnLA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/77.png",
+        image: "images/77.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaQEfwoE/M141SD-uk6tib9bCo-ZbkQ/view?utm_content=DAGvaQEfwoE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/78.png",
+        image: "images/78.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaW5IKyg/TZgnPPJJSIpSIDjeKU898g/view?utm_content=DAGvaW5IKyg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/79.png",
+        image: "images/79.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvafpywiM/D1Dz1CKiPv5W3SE3PJJtOQ/view?utm_content=DAGvafpywiM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/80.png",
+        image: "images/80.webp",
         title: "Arte Gospel - Culto da Vitória",
         editLink: "https://www.canva.com/design/DAGvaS_LoP8/q6tQNMHbm1EwmqufOExRIA/view?utm_content=DAGvaS_LoP8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/81.png",
+        image: "images/81.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvaSmXmp4/NbL7BAyiKse81q6wvgKvIA/view?utm_content=DAGvaSmXmp4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/82.png", // Caminho relativo para sua imagem
+        image: "images/82.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvaVVgLik/1go07W8DsVWFR0jMns5kOQ/view?utm_content=DAGvaVVgLik&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/83.png",
+        image: "images/83.webp",
         title: "Arte Gospel - Batismo",
         editLink: "https://www.canva.com/design/DAGvaQ3Ek3E/7J-nkH1fNv4VR9CFyPGBCw/view?utm_content=DAGvaQ3Ek3E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/84.png",
+        image: "images/84.webp",
         title: "Arte Gospel - Culto de Jovem",
         editLink: "https://www.canva.com/design/DAGvafVcny4/-i12no5sQ53k7OR4_oZUXQ/view?utm_content=DAGvafVcny4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/85.png",
+        image: "images/85.webp",
         title: "Arte Gospel - Culto de Oração",
         editLink: "https://www.canva.com/design/DAGvabT8_e8/jel2mzP5WKSv5T32rpmzYQ/view?utm_content=DAGvabT8_e8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/86.png",
+        image: "images/86.webp",
         title: "Arte Gospel - Culto de Família",
         editLink: "https://www.canva.com/design/DAGvacvL0cY/HwP70lm6u8uvRCuCtFqR4w/view?utm_content=DAGvacvL0cY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/87.png",
+        image: "images/87.webp",
         title: "Arte Gospel - Culto de Mulheres",
         editLink: "https://www.canva.com/design/DAGvaQwfNSs/fxrxebresuLY14DUYX7z8w/view?utm_content=DAGvaQwfNSs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/88.png",
+        image: "images/88.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvab4O6C4/gb5-OVNMQyKUT_zDFxuuhw/view?utm_content=DAGvab4O6C4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/89.png",
+        image: "images/89.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaQL6cHw/M23c2sNWr3uhzfhfeoUl9Q/view?utm_content=DAGvaQL6cHw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/90.png",
+        image: "images/90.webp",
         title: "Arte Gospel - Culto de Adolescentes",
         editLink: "https://www.canva.com/design/DAGvaXyGL0A/BiOttjsPhMArkws-NOKZmg/view?utm_content=DAGvaXyGL0A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/91.png",
+        image: "images/91.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvaSLk93A/zVpN7-NfOCY1fAVLdAWOAw/view?utm_content=DAGvaSLk93A&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/92.png",
+        image: "images/92.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvavOMkHs/bLW4jDinzjpP-viLkNPeeA/view?utm_content=DAGvavOMkHs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/93.png", // Caminho relativo para sua imagem
+        image: "images/93.webp", // Caminho relativo para sua imagem
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvanebc9w/ioEJJkCzGoPKhOlZyR3YZA/view?utm_content=DAGvanebc9w&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/94.png",
+        image: "images/94.webp",
         title: "Arte Gospel - Culto de Domingo",
         editLink: "https://www.canva.com/design/DAGvaiyElII/YIScBu9FiktF4E7junouJg/view?utm_content=DAGvaiyElII&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/95.png",
+        image: "images/95.webp",
         title: "Arte Gospel - Festividade",
         editLink: "https://www.canva.com/design/DAGvaoWjf9Y/2cuky1FxIRuqLhixXQFjnA/view?utm_content=DAGvaoWjf9Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/96.png",
+        image: "images/96.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvapqmQ0s/JmXmLxQ-vubQLL2GaW3upw/view?utm_content=DAGvapqmQ0s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/97.png",
+        image: "images/97.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvalZDgeE/rVNmTuWdj1f0tDlB7Stgcw/view?utm_content=DAGvalZDgeE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/98.png",
+        image: "images/98.webp",
         title: "Arte Gospel - Festividade",
         editLink: "https://www.canva.com/design/DAGvavMWjc4/TsVEqdgJZYKkhwjpNSCwug/view?utm_content=DAGvavMWjc4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/99.png",
+        image: "images/99.webp",
         title: "Arte Gospel - Agenda Ministerial",
         editLink: "https://www.canva.com/design/DAGvaqAIHuE/YmmO13_dnkLRQeWmMiyMvw/view?utm_content=DAGvaqAIHuE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/100.png",
+        image: "images/100.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvaimRZb8/PCmULP6kb4KJm1pvnJRnfA/view?utm_content=DAGvaimRZb8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/101.png",
+        image: "images/101.webp",
         title: "Arte Gospel - Conferência",
         editLink: "https://www.canva.com/design/DAGvajuHeQo/OP6-2aHHe1AoaOK6PRPsoQ/view?utm_content=DAGvajuHeQo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/102.png",
+        image: "images/102.webp",
         title: "Arte Gospel - Vigília",
         editLink: "https://www.canva.com/design/DAGvat3dJ6Y/SHr1l6RVlSbTBqORwyOvNg/view?utm_content=DAGvat3dJ6Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/103.png",
+        image: "images/103.webp",
         title: "Arte Gospel - Culto de Missões",
         editLink: "https://www.canva.com/design/DAGvajBuFaA/2gdEf-z_pF0dPQ1cxu4imQ/view?utm_content=DAGvajBuFaA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/104.png",
+        image: "images/104.webp",
         title: "Arte Gospel - Culto de Campanha",
         editLink: "https://www.canva.com/design/DAGvaqoS3ic/clYQ_FcTrK4tLmx5poMnSg/view?utm_content=DAGvaqoS3ic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/105.png",
+        image: "images/105.webp",
         title: "Arte Gospel - Culto de Missões",
         editLink: "https://www.canva.com/design/DAGvauGQNnE/KmDEf1vvlWkEXpjrHG9XDw/view?utm_content=DAGvauGQNnE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     },
     {
-        image: "images/106.png",
+        image: "images/106.webp",
         title: "Arte Gospel - Culto de Santa Ceia",
         editLink: "https://www.canva.com/design/DAGvasqHgic/QSK5CJcXNGH-MJ0fi8dY4A/view?utm_content=DAGvasqHgic&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
     }
